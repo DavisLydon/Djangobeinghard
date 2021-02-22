@@ -4,5 +4,5 @@ from django.urls import include, path
 urlpatterns = [
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
-    path('dwl1polls.herokuapp.com', include('polls.urls'))
+    path('', include('polls.urls'))
 ]
