@@ -1,0 +1,22 @@
+{% extends "polls/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+{% if thought_list %}
+    <ul>
+    {% for t in thought_list %}
+        <li> {{ t.thought }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No thought.</p>
+{% endif %}
+{% endblock %}
+</body>
+</html>

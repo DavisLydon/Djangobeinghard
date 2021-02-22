@@ -1,0 +1,19 @@
+{% extends "polls/base.html" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+{% load crispy_forms_tags %}
+<form action="/polls/thoughts/" method="post" class="form" novalidate>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
+</body>
+</html>

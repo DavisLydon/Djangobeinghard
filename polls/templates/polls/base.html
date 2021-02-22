@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+<header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'polls:index' %}">Polls</a>
+            </div>
+        </div>
+    </nav>
+</header>
+    <br>
+{% block content %}
+{% endblock %}
+    <br>
+<footer>
+    Made by Davis Lydon <br>
+    For CS 3240 GP-B
+</footer>
+</center>
+</body>
+</html>
